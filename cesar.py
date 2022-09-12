@@ -1,6 +1,13 @@
-print("bonjour tout le monde")
-uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWYZ'
-lowercase = 'abcdefghijklmnopqrstuvwyz'
+print("Bonjour Mesdames et Monsieur , voici l'algorithme de César ")
+print('*' * 100)
+print("                              LE CODE CESAR  ")
+print('*' * 100)
+uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+lowercase = 'abcdefghijklmnopqrstuvwxyz'
+
+phrase = input('entrer votre phrase à encriptée: ')
+pas = int(input('entrer votre pas: '))
+
 def cesar_encript(clearText, step):
     cipherText = ''
 
@@ -17,17 +24,11 @@ def cesar_encript(clearText, step):
             cipherText += ' '
     return cipherText
 
-
-#text = input("donne une phrase : ")
-#pas = int(input("donne une pas : "))
-cipherText = cesar_encript(' le code cesar est facile a dechifree', 12)
-
-#phrase_encripte = cipherText(text, pas)
-print(cipherText)
+#cipherText = cesar_encript(' le code cesar est facile a dechifree', 12)
+phrase_encripte = cesar_encript(phrase, pas)
+#print(cipherText)
+print(phrase_encripte)
 #print(phrase_encripte)
-
-#phrase = input('entrer votre phrase à encriptée: ')
-#pas = input('entrer votre pas: ')
 
 #cesar_encript(phrase, str(pas))
 
